@@ -1,0 +1,19 @@
+{
+  "otsikko": "JSON-datan käsittelyä",
+  "kuvaus": "Tässä harjoitellaan JSON ja Fetch API käyttöä.",
+
+  "opintojakso": {
+    "nimi": "Digitekniikat",
+    "tunnus": "DT2025",
+    "opintopisteet": 5
+  },
+
+  "sisalto": [
+    "low-code",
+    "sisällönhallintajärjestelmät",
+    "responsiivinen käyttöliittymä",
+    "REST-rajapinta"
+  ],
+
+  "kuva": "https://jaakkola.github.io/json/digi.JPG"
+}
