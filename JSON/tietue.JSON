@@ -1,19 +1,44 @@
 {
   "otsikko": "JSON-datan käsittelyä",
-  "kuvaus": "Tässä harjoitellaan JSON ja Fetch API käyttöä.",
-
+  "kuvaus": "Tällä sivustolle haetaan JSON-muotoista dataa",
+  "kuva": "https://jaakkola.github.io/json/digi.JPG",
   "opintojakso": {
     "nimi": "Digitekniikat",
-    "tunnus": "DT2025",
+    "tunnus": "DIG007AS2A-3018",
     "opintopisteet": 5
   },
-
   "sisalto": [
-    "low-code",
-    "sisällönhallintajärjestelmät",
-    "responsiivinen käyttöliittymä",
-    "REST-rajapinta"
+    {
+      "aihe": "low-code",
+      "linkki": " https://www.weebly.com/"
+    },
+    {
+      "aihe": "sisällönhallintajärjestelmät",
+      "linkki": " https://wordpress.com/"
+    },
+    {
+      "aihe": "responsiivinen käyttöliittymä ja komponentit",
+      "linkki": " https://getbootstrap.com/"
+    },
+    {
+      "aihe": "tiedon haku julkisista palveluista rest-rajapinnan yli",
+      "linkki": " https://www.json.org/json-en.html"
+    }
   ],
-
-  "kuva": "https://jaakkola.github.io/json/digi.JPG"
+  "osallistujat": {
+    "lukumaara": 5,
+    "nimet": [
+      "Ly",
+      "Pekka",
+      "Anna",
+      "Matti",
+      "Liisa"
+    ]
+  },
+  "toteutus": {
+    "nimi": "Digitekniikat",
+    "alku": "13.1.2025",
+    "loppu": "14.3.2025",
+    "kesto": "8 viikkoa"
+  }
 }
