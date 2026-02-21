@@ -10,19 +10,19 @@
   "sisalto": [
     {
       "aihe": "low-code",
-      "linkki": " https://www.weebly.com/"
+      "linkki": "https://www.weebly.com/"
     },
     {
       "aihe": "sisällönhallintajärjestelmät",
-      "linkki": " https://wordpress.com/"
+      "linkki": "https://wordpress.com/"
     },
     {
       "aihe": "responsiivinen käyttöliittymä ja komponentit",
-      "linkki": " https://getbootstrap.com/"
+      "linkki": "https://getbootstrap.com/"
     },
     {
       "aihe": "tiedon haku julkisista palveluista rest-rajapinnan yli",
-      "linkki": " https://www.json.org/json-en.html"
+      "linkki": "https://www.json.org/json-en.html"
     }
   ],
   "osallistujat": {

@@ -23,28 +23,32 @@ function haeTiedot() {
         .then(function (obj) {
             let tiedot = "<h1>" + obj.otsikko + "</h1>";
             tiedot += "<p class='small text-muted text-center'>" + obj.kuvaus + "</p>";
-            tiedot += "<img src='" + obj.kuva + "' class='hero-img'>";
+            tiedot += "<img src='" + obj.kuva + "' class='hero-img' style='width:100%; max-width:600px;'>";
 
             // Opintojakso info
-            tiedot += "<div class='opintojakso-info'>";
+            tiedot += "<div class='opintojakso-info' style='margin-top:20px;'>";
             tiedot += "<h3>Opintojakso</h3>";
-            tiedot += "Nimi: " + obj.opintojakso.nimi + "<br>";
-            tiedot += "Tunnus: " + obj.opintojakso.tunnus + "<br>";
-            tiedot += "Opintopisteet: " + obj.opintojakso.opintopisteet + " op";
+            tiedot += "<b>Nimi:</b> " + obj.opintojakso.nimi + "<br>";
+            tiedot += "<b>Tunnus:</b> " + obj.opintojakso.tunnus + "<br>";
+            tiedot += "<b>Opintopisteet:</b> " + obj.opintojakso.opintopisteet + " op";
             tiedot += "</div>";
 
-            // sisalto 
+            // aihe ja .linkki
             tiedot += "<div class='aiheet-section'><h3>Sisältö</h3>";
             for (var i = 0; i < obj.sisalto.length; i++) {
-                tiedot += "<div class='aihe-row'>";
-                tiedot += "<span class='aihe-title'>Aihe: " + obj.sisalto[i].aihe + "</span>";
-                tiedot += "<a href='" + obj.sisalto[i].linkki + "' class='aihe-link' target='_blank'>" + obj.sisalto[i].linkki + "</a>";
-                tiedot += "</div>";
+                tiedot += "<p style='margin-bottom:10px;'>";
+
+                // trim() 
+                let cleanLink = obj.sisalto[i].linkki.trim();
+                tiedot += "<b>Aihe: </b>" + obj.sisalto[i].aihe + " - ";
+                tiedot += "<a href='" + cleanLink + "' class='aihe-link' target='_blank'>" + cleanLink + "</a>";
+                tiedot += "</p>";
             }
             tiedot += "</div>";
 
             document.getElementById("vastaus").innerHTML = tiedot;
-        });
+        })
+        .catch(err => console.error("Lỗi tải dữ liệu:", err));
 }
 
 function haeToteutus() {
