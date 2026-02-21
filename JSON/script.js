@@ -40,7 +40,7 @@ function haeTiedot() {
 
 
                 let cleanLink = obj.sisalto[i].linkki.trim();
-                tiedot += "<b>Aihe: </b>" + obj.sisalto[i].aihe + " - ";
+                tiedot += "<b>Aihe: </b>" + obj.sisalto[i].aihe + " ";
                 tiedot += "<a href='" + cleanLink + "' class='aihe-link' target='_blank'>" + cleanLink + "</a>";
                 tiedot += "</p>";
             }
