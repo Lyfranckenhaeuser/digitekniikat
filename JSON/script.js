@@ -38,17 +38,22 @@ function haeTiedot() {
             for (var i = 0; i < obj.sisalto.length; i++) {
                 tiedot += "<p style='margin-bottom:10px;'>";
 
-                // trim() 
+
                 let cleanLink = obj.sisalto[i].linkki.trim();
                 tiedot += "<b>Aihe: </b>" + obj.sisalto[i].aihe + " - ";
                 tiedot += "<a href='" + cleanLink + "' class='aihe-link' target='_blank'>" + cleanLink + "</a>";
                 tiedot += "</p>";
             }
+
+
             tiedot += "</div>";
 
             document.getElementById("vastaus").innerHTML = tiedot;
         })
-        .catch(err => console.error("Lỗi tải dữ liệu:", err));
+        .catch(err => {
+            console.error("Virhe tietoja haettaessa:", err);
+            document.getElementById("vastaus").innerHTML = "Tietoja không thể tải được.";
+        });
 }
 
 function haeToteutus() {

@@ -27,13 +27,7 @@
   ],
   "osallistujat": {
     "lukumaara": 5,
-    "nimet": [
-      "Ly",
-      "Pekka",
-      "Anna",
-      "Matti",
-      "Liisa"
-    ]
+    "nimet": ["Ly", "Pekka", "Anna", "Matti", "Liisa"]
   },
   "toteutus": {
     "nimi": "Digitekniikat",
