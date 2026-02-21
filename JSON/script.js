@@ -18,7 +18,7 @@ window.onload = function () {
 //--- TEHTÄVÄ 1: Json.html
 
 function haeTiedot() {
-    fetch('tietue.json')
+    fetch('tietue.JSON')
         .then(function (res) { return res.json(); })
         .then(function (obj) {
             let tiedot = "<h1>" + obj.otsikko + "</h1>";
@@ -48,7 +48,7 @@ function haeTiedot() {
 }
 
 function haeToteutus() {
-    fetch('tietue.json')
+    fetch('tietue.JSON')
         .then(res => res.json())
         .then(obj => {
             const kuvaToteutus = "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=900&auto=format&fit=crop&q=60";
