@@ -1,0 +1,148 @@
+/*Kaikille sivuille*/
+body {
+    background-color: rgb(245, 222, 245);
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Navigaatiopalkki */
+nav {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+
+/* Pääotsikko (h1) */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(3, 12, 31);
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* TEHTÄVÄ 1: JSON (json.html & toteutus.html)*/
+.container-custom {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 100px;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+.opintojakso-info {
+    text-align: center;
+    margin: 40px 0;
+    line-height: 1.8;
+}
+
+.aihe-row {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.aihe-title {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.aihe-link {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* TEHTÄVÄ 2: POKEMON (pokemon.html) */
+/* Hakupainike */
+.btn-poke {
+    border: 2px solid black;
+    background: #eee;
+    font-weight: bold;
+    border-radius: 0;
+    padding: 10px 20px;
+}
+
+.btn-poke:hover {
+    background: #ddd;
+}
+
+/* Pokemon-kortin tyylit */
+.poke-card {
+    text-align: left;
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* Hakukenttä */
+#pokemonName {
+    width: 250px;
+}
+
+/* Pokemon-kuva */
+#kuva2 img {
+    max-width: 200px;
+    display: block;
+    margin: 20px 0;
+}
+
+/* TEHTÄVÄ 3: SÄÄ (saa.html) */
+/* Sää-kortin tyylit*/
+#saa-vastaus {
+    background-color: rgb(243, 246, 248);
+    border: 2px solid #acc2e1;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: left;
+    border-radius: 20px;
+}
+
+/* Tekstit */
+#saa-vastaus p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.saa-label {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-right: 6px;
+}
+
+/* Sää-kuvake */
+#saa-vastaus img {
+    display: block;
+    margin: 20px auto;
+    background: #eee;
+    border-radius: 50%;
+    width: 120px;
+}
+
+/* Aikaleima */
+.aika {
+    font-size: 1.2rem;
+    color: rgb(81, 77, 77);
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
