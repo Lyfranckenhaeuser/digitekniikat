@@ -39,8 +39,11 @@ function haeTiedot() {
             tiedot += "<div class='aiheet-section'><h3>Sisältö</h3>";
             for (var i = 0; i < obj.sisalto.length; i++) {
                 let cleanLink = obj.sisalto[i].linkki.trim();
+                
+                // Valitaan siistimpi versio, jossa on marginaali (HEAD-versio)
                 tiedot += "<p style='margin-bottom:10px;'>";
                 tiedot += "<b>Aihe: </b>" + obj.sisalto[i].aihe + "  ";
+                
                 tiedot += "<a href='" + cleanLink + "' class='aihe-link' target='_blank'>" + cleanLink + "</a>";
                 tiedot += "</p>";
             }
