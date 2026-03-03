@@ -1,29 +1,66 @@
 /*Kaikille sivuille*/
 body {
-    background-color: rgb(245, 222, 245);
+    background-color: rgb(243, 226, 243);
     font-family: sans-serif;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
-/* Navigaatiopalkki */
-nav {
-    background-color: #333;
-    padding: 20px;
-    text-align: center;
+/* NAVIGAATIOPALKKI  */
+.custom-nav {
+    background-color: #ec99dd4a;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-height: 60px;
 }
 
-nav a {
-    color: white;
+/* Portfolio */
+.brand-name {
+    position: absolute;
+    left: 30px;
+    color: #000000 !important;
+    font-weight: 800 !important;
+    font-size: 1.5rem;
     text-decoration: none;
-    padding: 10px 20px;
-    font-weight: bold;
 }
 
-nav a:hover {
-    color: #0d6efd;
-    text-decoration: underline;
+/* Tehtävä-linkit */
+.central-links {
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+}
+
+/* Linkkien tyyli */
+.central-links a {
+    color: #000000 !important;
+    font-weight: 700 !important;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.central-links a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .custom-nav {
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .brand-name {
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 /* Pääotsikko (h1) */
