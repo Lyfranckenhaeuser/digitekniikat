@@ -10,11 +10,14 @@ html { scroll-behavior: smooth; }
 
 /* Navigointipalkki ja Alatunniste (Header & Footer) */
 .navbar, footer {
-    background-color: #f1a9b0 !important; 
+    background-color: #f69bcb !important; 
     border: none !important;
 }
 
-.navbar { padding: 0.8rem 0; }
+
+.navbar { padding: 15px 0 !important; 
+    min-height: 70px; 
+}
 
 footer { 
     padding: 30px 0 20px; 
@@ -22,7 +25,7 @@ footer {
 }
 
 /* Tekstien tyylit */
-.nav-link, footer h5, footer p, .hvr-scale {
+.nav-link, footer h2,footer h5, footer p, .hvr-scale {
     color: #000000 !important;
     font-weight: 700 !important;
     text-decoration: none;   
@@ -53,47 +56,79 @@ footer {
 
 .nav-link:hover, .hvr-scale:hover {
     background-color: rgba(255, 255, 255, 0.3) !important; 
-    transform: translateY(-2px); /* Kevyt noste */
-    color: #000000 !important;
+    transform: translateY(-2px); 
 }
 
 /* Painikkeiden yleiset tyylit */
 .btn { 
-    background-color: transparent !important;
-    font-weight: 600;
+    padding: 10px 20px;
+    font-weight: 700;
     border-radius: 8px;
     transition: 0.3s;
 }
 
 /* Painikkeiden värit ja reunat */
-.btn-primary { border: 2px solid #0d6efd !important; color: #0d6efd !important; }
-.btn-success { border: 2px solid #198754 !important; color: #198754 !important; }
-.btn-info    { border: 2px solid #0dcaf0 !important; color: #0dcaf0 !important; }
-
+.btn-primary { 
+    background-color: #e7f1ff !important; 
+    border: 2px solid #0d6efd !important; 
+    color: #084298 !important; 
+}
+.btn-success { 
+    background-color: #e6f4ea !important; 
+    border: 2px solid #198754 !important; 
+    color: #0f5132 !important; 
+}
+.btn-info { 
+    background-color: #e1f5fe !important; 
+    border: 2px solid #a9e4f0 !important; 
+    color: #0e4955 !important; 
+}
 /* Painikkeiden hover-efektit (Täyttöväri) */
-.btn-primary:hover { background: #0d6efd !important; color: white !important; }
-.btn-success:hover { background: #198754 !important; color: white !important; }
-.btn-info:hover    { background: #0dcaf0 !important; color: white !important; }
+.btn-primary:hover, .btn-success:hover, .btn-info:hover { 
+    color: white !important; 
+    background-color: #f69bcb !important; 
+}
 
 /* Sisältöosiot (Hero, Kortit ja Kuvat) */
 .hero-img-filter {
-    filter: brightness(45%);
+    filter: brightness(40%);
     object-fit: cover;
-    height: 400px;
+    height: 450px;
     width: 100%;
 }
 
+.carousel-caption {
+    background: rgba(255, 255, 255, 0.7); 
+    padding: 20px;
+    border-radius: 30px;
+    bottom: 20%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel-caption h1, .carousel-caption p.lead {
+    color: #000000 !important;
+    text-shadow: none !important;
+}
 .card {
     border: none !important;
     background-color: #fcf1f7; 
     border-radius: 12px;
 }
 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
 .profile-img { 
-    width: 180px; 
-    height: 180px; 
+    width: 300px; 
+    height: 300px; 
     object-fit: cover; 
+    object-position: top; 
     border-radius: 50%; 
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 footer hr { display: none !important; } /* Poistetaan tarpeeton viiva */
@@ -101,6 +136,7 @@ footer hr { display: none !important; } /* Poistetaan tarpeeton viiva */
 footer p.small { 
     margin-top: 20px !important; 
     opacity: 0.8;
+    color: #000000 !important;
 }
 
 .hvr-scale:hover { transform: scale(1.1) translateY(-2px); }
