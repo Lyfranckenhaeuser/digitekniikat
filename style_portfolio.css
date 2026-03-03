@@ -25,7 +25,7 @@ footer {
 }
 
 /* Tekstien tyylit */
-.nav-link, footer h2,footer h5, footer p, .hvr-scale {
+.nav-link, footer h2,footer h4, footer p, .hvr-scale {
     color: #000000 !important;
     font-weight: 700 !important;
     text-decoration: none;   
