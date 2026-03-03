@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <!--Navigointipalkki: Sivuston ylävalikko, joka sisältää linkit eri osioihin-->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">Ly's Portfolio</a>
@@ -52,96 +51,89 @@
     <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <!--Taustakuva koodauksesta, tummennettu CSS-suodattimella tekstin luettavuuden parantamiseksi-->
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                    class="d-block w-100 hero-img-filter" alt="Koodaus">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1744&auto=format&fit=crop"
+                    class="d-block w-100 hero-img-filter" alt="Kuvituskuva koodauksesta ja työpöydästä">
                 <div class="carousel-caption">
                     <h1 class="display-3 fw-bold">Digitekniikat 2026</h1>
                     <p class="lead fw-bold text-dark"
-                        style="background: rgba(255,255,255,0.7); display: inline-block; padding: 5px 15px; border-radius: 10px;">
+                        style="background: rgba(255,255,255,0.7); display: inline-block; padding: 5px 15px; border-radius: 5px;">
                         Web-tekniikat: Bootstrap, JSON & API
                     </p>
                 </div>
             </div>
         </div>
     </div>
-    <!--Projekti-osio-->
+
     <section id="projekti" class="container my-5">
         <h2 class="text-center mb-5">Kurssin tehtävät</h2>
         <div class="row g-4">
-            <!--JSON: Datan haku paikallisesta JSON-tiedostosta fetch-metodilla-->
             <div class="col-md-4">
                 <div class="card h-100 shadow-sm">
                     <div class="card-body text-center">
                         <div class="feature-icon mb-3">📄</div>
                         <h5 class="card-title">JSON Fetch</h5>
                         <p class="card-text">Datan haku paikallisesta tiedostosta ja muotoilu HTML-taulukkoon.</p>
-                        <a href="JSON/json.html" class="btn btn-primary w-100 fw-bold text-dark">Avaa tehtävä</a>
+                        <a href="JSON/json.html" class="btn btn-primary w-100">Avaa tehtävä</a>
                     </div>
                 </div>
             </div>
-            <!--Pokemon API: Ulkoisen PokeAPI-rajapinnan hyödyntäminen hakuun-->
             <div class="col-md-4">
                 <div class="card h-100 shadow-sm border-success">
                     <div class="card-body text-center">
                         <div class="feature-icon mb-3">👾</div>
                         <h5 class="card-title">Pokemon API</h5>
                         <p class="card-text">Dynaaminen haku ulkoisesta rajapinnasta Enter-näppäimen tuella.</p>
-                        <a href="JSON/pokemon.html" class="btn btn-success w-100 fw-bold text-dark">Etsi Pokemoneja</a>
+                        <a href="JSON/pokemon.html" class="btn btn-success w-100">Etsi Pokemoneja</a>
                     </div>
                 </div>
             </div>
-            <!--Sää API: Reaaliaikaisen säädatan haku OpenWeather-rajapinnasta-->
             <div class="col-md-4">
                 <div class="card h-100 shadow-sm border-info">
                     <div class="card-body text-center">
                         <div class="feature-icon mb-3">☁️</div>
                         <h5 class="card-title">Sää-API</h5>
                         <p class="card-text">Helsingin reaaliaikainen säädata hyödyntäen OpenWeather-rajapintaa.</p>
-                        <a href="JSON/saa.html" class="btn btn-info w-100 fw-bold text-dark">Katso sää</a>
+                        <a href="JSON/saa.html" class="btn btn-info w-100">Katso sää</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--Tietoa minusta-->
+
     <section id="tietoa" class="py-5 bg-light border-top">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-4 text-center mb-4 mb-md-0">
                     <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Lyn kuva" class="img-fluid rounded-circle profile-img">
+                        alt="Lyn kuva" class="img-fluid profile-img">
                 </div>
-
                 <div class="col-md-8">
                     <h2 class="fw-bold mb-3">Tietoa minusta</h2>
                     <p class="lead text-dark">
-                        Olen Digitekniikat-opiskelija, joka on innostunut modernista web-kehityksestä ja
-                        käyttäjäystävällisten verkkosivujen luomisesta.
+                        Olen Digitekniikat-opiskelija, joka on innostunut modernista web-kehityksestä.
                     </p>
                     <p class="text-dark">
                         Tämä portfolio on koottu harjoitustöistä, joissa olen syventänyt osaamistani Bootstrap-kehyksen
-                        hallinnassa, JSON-datan käsittelyssä sekä ulkoisten rajapintojen (API) hyödyntämisessä.
-                        Tavoitteenani on rakentaa selkeitä, responsiivisia ja toimivia digitaalisia ratkaisuja.
+                        hallinnassa và API-rajapintojen hyödyntämisessä.
                     </p>
                 </div>
             </div>
         </div>
     </section>
-    <!--Sisältää minun tiedot, GitHub-linkin ja tekijänoikeudet-->
+
     <footer>
         <div class="container text-center">
-            <h2 class="fw-bold">Ly - Digitaalisten taitojen portfolio</h2>
+            <h5 class="fw-bold text-dark">Ly - Digitaalisten taitojen portfolio</h5>
             <p class="text-dark">Tämä sivusto on toteutettu Bootstrap 5:llä ja JavaScriptillä.</p>
             <div class="mt-3">
                 <a href="https://github.com/Lyfranckenhaeuser/digitekniikat"
-                    class="text-black text-decoration-none mx-2">GitHub Repo</a>
+                    class="text-dark text-decoration-none mx-2 fw-bold">GitHub Repo</a>
             </div>
-            <hr class="mt-4 border-dark">
-            <p class="small text-dark mb-0">&copy; 2026 Ly - Helsinki </p>
+            <hr class="mt-4 bg-secondary">
+            <p class="small mb-0">&copy; 2026 Ly - Helsinki </p>
         </div>
     </footer>
-    <!--Bootstrap 5 JavaScript: Bootstrap 5 JavaScript-kirjasto komponenttien toiminnallisuutta varten-->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
