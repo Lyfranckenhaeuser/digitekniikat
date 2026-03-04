@@ -3,7 +3,7 @@ body {
     background-color: rgb(243, 226, 243);
     font-family: sans-serif;
     margin: 0;
-    padding: 0;
+    padding-top: 100px;
     overflow-x: hidden;
 }
 
@@ -11,38 +11,37 @@ body {
 .custom-nav {
     background-color: #ec99dd4a;
     padding: 15px 30px;
-    display: flex;
-    align-items: center;
-    position: relative;
+    
     min-height: 60px;
 }
 
 /* Portfolio */
 .brand-name {
-    position: absolute;
-    left: 30px;
+    position: relative !important; 
+    float: left; 
+    padding-right: 20px; 
     color: #000000 !important;
-    font-weight: 800 !important;
+    font-weight: 700 !important;
     font-size: 1.5rem;
     text-decoration: none;
+    white-space: nowrap; 
 }
 
 /* Tehtävä-linkit */
 .central-links {
-    margin: 0 auto;
+    justify-content: center;
     display: flex;
     gap: 10px;
+    flex-grow: 1;
 }
 
 /* Linkkien tyyli */
 .central-links a {
-    color: #000000 !important;
-    font-weight: 700 !important;
+    color: #000 !important;
+    font-weight: 700;
     text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 20px;
-    transition: all 0.3s ease;
-    font-size: 0.95rem;
+    padding: 8px 12px;
+    white-space: nowrap; 
 }
 
 .central-links a:hover {
@@ -50,16 +49,17 @@ body {
     transform: translateY(-2px);
 }
 
-@media (max-width: 768px) {
-    .custom-nav {
-        flex-direction: column;
-        padding-top: 50px;
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: #f7caeb; /* Nền hồng cho menu khi mở */
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 10px;
     }
 
-    .brand-name {
-        top: 10px;
-        left: 50%;
-        transform: translateX(-50%);
+    .central-links {
+        flex-direction: column; /* Xếp dọc các link để không bị chật */
+        text-align: center;
     }
 }
 
