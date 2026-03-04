@@ -51,14 +51,14 @@ body {
 
 @media (max-width: 991px) {
     .navbar-collapse {
-        background-color: #f7caeb; /* Nền hồng cho menu khi mở */
+        background-color: #f7caeb; 
         padding: 20px;
         border-radius: 10px;
         margin-top: 10px;
     }
 
     .central-links {
-        flex-direction: column; /* Xếp dọc các link để không bị chật */
+        flex-direction: column; 
         text-align: center;
     }
 }
